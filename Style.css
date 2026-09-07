@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #24282b;
+    color: white;
+    min-height: 75px;
+    border-bottom: 4px solid #1296d4;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.logo h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.logo span {
+    color: #1296d4;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover,
+nav a.actual {
+    color: #1296d4;
+}
+
+.banner {
+    min-height: 400px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+}
+
+.banner .contenedor {
+    width: 90%;
+}
+
+.banner h2 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 20px;
+    max-width: 950px;
+    margin: auto;
+}
+
+
+/* ------------------------------
+   BOLETÍN
+------------------------------ */
+
+.boletin {
+    background-color: #24282b;
+    color: white;
+    padding: 30px 0;
+}
+
+.boletin .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boletin h3 {
+    font-size: 24px;
+}
+
+.boletin form {
+    display: flex;
+}
+
+.boletin input {
+    width: 260px;
+    height: 36px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+}
+
+.boletin button {
+    height: 38px;
+    padding: 0 20px;
+    border: none;
+
+    background-color: #f4511e;
+    color: white;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boletin button:hover {
+    background-color: #d84315;
+}
+
+.servicios {
+    background-color: #fff;
+    padding: 30px 0 35px;
+}
+
+.servicios .contenedor {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.servicio {
+    width: 31%;
+    padding: 0 10px;
+}
+
+.servicio img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.servicio h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.servicio p {
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.icono-diseno {
+    height: 90px;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #1296d4;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    header .contenedor {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 5px 15px;
+    }
+
+    .banner h2 {
+        font-size: 38px;
+    }
+
+    .banner p {
+        font-size: 17px;
+    }
+
+    .boletin .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .boletin form {
+        margin-top: 20px;
+    }
+
+    .servicios .contenedor {
+        flex-direction: column;
+    }
+
+    .servicio {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
